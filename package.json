@@ -23,7 +23,7 @@
     "redux-actions": "^2.2.1",
     "redux-form": "^7.3.0",
     "redux-saga": "^0.15.6",
-    "webdriver-manager": "^12.1.1",
+    "webdriver-manager": "^12.1.1"
   },
   "pre-commit": [
     "lint"
