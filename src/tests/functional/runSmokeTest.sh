@@ -6,7 +6,7 @@ yarn global add protractor
 export StatusResult1=$?;
 if [ $StatusResult1 -eq "0" ]; then
     echo Atualizando o servidor do Selenium...
-    webdriver-manager update
+    node ./node_modules/webdriver-manager update
     export StatusResult2=$?;
     if [ $StatusResult2 -eq "0" ]; then
         echo Iniciando o servidor...
