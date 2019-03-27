@@ -14,7 +14,7 @@ if [ $StatusResult1 -eq "0" ]; then
         export StatusResult3=$?;
         if [ $StatusResult3 -eq "0" ]; then
             echo Executando os testes...
-            protractor functional-tests.conf.js
+            node ./node_modules/protractor-cucumber-framework protractor functional-tests.conf.js
             export StatusResult4=$?;
             if [ $StatusResult4 -eq "0" ]; then
                 echo Parando o servidor...
