@@ -10,7 +10,7 @@ if [ $StatusResult1 -eq "0" ]; then
     export StatusResult2=$?;
     if [ $StatusResult2 -eq "0" ]; then
         echo Iniciando o servidor...
-        webdriver-manager start --detach
+        node ./node_modules/webdriver-manager start --detach
         export StatusResult3=$?;
         if [ $StatusResult3 -eq "0" ]; then
             echo Executando os testes...
@@ -18,7 +18,7 @@ if [ $StatusResult1 -eq "0" ]; then
             export StatusResult4=$?;
             if [ $StatusResult4 -eq "0" ]; then
                 echo Parando o servidor...
-                webdriver-manager shutdown
+                node ./node_modules/webdriver-manager shutdown
                 export StatusResult5=$?;
                 if [ $StatusResult5 -eq "0" ]; then
                     echo O servidor foi parado com sucesso!
