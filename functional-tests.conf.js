@@ -2,16 +2,24 @@
 /* global browser */
 
 exports.config = {
-  capabilities: {
-    browserName: 'chrome',
-    shardTestFiles: true
-  },
+  multiCapabilities: [
+    {
+      browserName: 'firefox'
+    },
+    {
+      browserName: 'safari'
+    },
+    {
+      browserName: 'chrome'
+    }
+  ],
+  maxSessions: 1,
   allScriptsTimeout: 10000,
   seleniumAddress: 'http://localhost:4444/wd/hub',
   baseUrl: 'http://localhost:3000/',
   framework: 'custom',
   frameworkPath: require.resolve('protractor-cucumber-framework'),
-  specs: ['./src/tests/functional/features/*.feature'], 
+  specs: ['./src/tests/functional/features/*.feature'],
   restartBrowserBetweenTests: false,
   cucumberOpts: {
     require: [
@@ -25,7 +33,9 @@ exports.config = {
 
   onPrepare() {
     browser.manage().timeouts().pageLoadTimeout(40000);
-    const { Given, Then, When, Before } = require('cucumber');
+    const {
+      Given, Then, When, Before
+    } = require('cucumber');
     global.Given = Given;
     global.When = When;
     global.Then = Then;
