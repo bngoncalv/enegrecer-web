@@ -4,16 +4,15 @@ const geckodriver = require('geckodriver');
 
 require('nightwatch-cucumber')({
   cucumberArgs: [
-    '--require', 'test/step_definitions',
-    '--require', 'test/support_files/hooks.js',
+    '--require', 'src/tests/step_definitions',
     '--format', 'node_modules/cucumber-pretty',
-    '--format', 'json:test/reports/cucumber.json',
-    'test/features']
+    '--format', 'json:src/tests/reports/cucumber.json',
+    'src/tests/features']
 });
 
 module.exports = {
-  output_folder: 'test/reports',
-  page_objects_path: 'test/pages',
+  output_folder: 'src/tests/reports',
+  page_objects_path: 'src/tests/pages',
   custom_assertions_path: '',
   live_output: false,
   disable_colors: false,
@@ -29,25 +28,12 @@ module.exports = {
       launch_url: 'http://localhost:8087',
       selenium_port: 4444,
       selenium_host: '127.0.0.1',
-      screenshots: {
-        enabled: true,
-        path: 'test/reports/',
-        on_failure: true,
-        on_error: true,
-        on_success: true
-      },
-      desiredCapabilities: {
-        browserName: 'firefox',
-        javascriptEnabled: true
-      }
-    },
-    chrome: {
       desiredCapabilities: {
         browserName: 'chrome',
         javascriptEnabled: true,
         acceptSslCerts: true,
         chromeOptions: {
-          args: ['--lang=en', 'start-fullscreen']
+          args: ['start-fullscreen']
         }
       },
       selenium: {
@@ -56,14 +42,11 @@ module.exports = {
         }
       }
     },
-    chromeMobile: {
+    chrome: {
       desiredCapabilities: {
-        javascriptEnabled: true,
-        acceptSslCerts: true,
         browserName: 'chrome',
-        chromeOptions: {
-          args: ['window-size=375,667']
-        }
+        javascriptEnabled: true,
+        acceptSslCerts: true
       },
       selenium: {
         cli_args: {
@@ -75,7 +58,7 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'firefox',
         javascriptEnabled: true,
-        acceptSslCerts: true
+        marionette: true
       },
       selenium: {
         cli_args: {

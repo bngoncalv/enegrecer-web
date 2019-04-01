@@ -9,8 +9,8 @@ const browserstackConfig = {
   test_settings: {
     default: {
       desiredCapabilities: {
-        'browserstack.user': process.env.BROWSERSTACK_USR,
-        'browserstack.key': process.env.BROWSERSTACK_PSW,
+        'browserstack.user': 'brunagonalves3',
+        'browserstack.key': 'n5c6Ay3MqPpNPpxj567q',
         'browserstack.local': true
       },
       globals: defaultConfig.test_settings.default.globals
@@ -52,17 +52,6 @@ const browserstackConfig = {
         os_version: '10',
         browser: 'chrome',
         browser_version: '70.0'
-      }
-    },
-    chromeMobile: {
-      desiredCapabilities: {
-        os: 'Windows',
-        os_version: '10',
-        browser: 'chrome',
-        browser_version: '70.0',
-        chromeOptions: {
-          args: ['window-size=375,667']
-        }
       }
     }
   }
