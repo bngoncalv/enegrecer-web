@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  environment {
+    BROWSERSTACK = credentials('browserstack-credentials')
+  }
   stages {
     stage('Install') {
       steps {
@@ -18,8 +21,7 @@ pipeline {
     }
     stage('Functional Test') {
       steps {
-        sh '''chmod +x ./src/tests/functional/runSmokeTest.sh
-           ./src/tests/functional/runSmokeTest.sh'''
+        sh 'yarn test:functional:ci'
       }
     }
   }

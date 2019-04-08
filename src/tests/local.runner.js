@@ -8,7 +8,7 @@ try {
   console.log('Connecting local'); // eslint-disable-line
 
   Nightwatch.bs_local = new browserstack.Local();
-  Nightwatch.bs_local.start({ key: 'n5c6Ay3MqPpNPpxj567q' }, (error) => {
+  Nightwatch.bs_local.start({ key: process.env.BROWSERSTACK_PSW }, (error) => {
     if (error) throw error;
 
     console.log('Connected. Now testing...'); // eslint-disable-line

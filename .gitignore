@@ -21,6 +21,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 enegrecer-web.iml
+local.log
+selenium-debug.log
+src/tests/reports
 
 package-lock.json
 

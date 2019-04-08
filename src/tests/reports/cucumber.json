@@ -1,0 +1,74 @@
+[
+  {
+    "keyword": "Funcionalidade",
+    "name": "Denúncia",
+    "line": 2,
+    "id": "denúncia",
+    "tags": [],
+    "uri": "src/tests/features/denuncia.feature",
+    "elements": [
+      {
+        "id": "denúncia;realizar-o-cadastro-de-uma-denúncia",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Realizar o cadastro de uma denúncia",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 4,
+            "name": "O usuário acessa a página de cadastrar denúncia",
+            "match": {
+              "location": "src/tests/step_definitions/denuncia.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13971000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 5,
+            "name": "O usuário preenche os campos para o cadastro da denúncia",
+            "match": {
+              "location": "src/tests/step_definitions/denuncia.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32353000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 6,
+            "name": "O usuário confirma o cadastro da denúncia",
+            "match": {
+              "location": "src/tests/step_definitions/denuncia.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1750000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 7,
+            "name": "A denúncia é salva com sucesso e o usuário é redirecionado para página \"depois-denuncia\"",
+            "match": {
+              "location": "src/tests/step_definitions/denuncia.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 396000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

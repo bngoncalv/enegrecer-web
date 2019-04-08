@@ -9,8 +9,8 @@ const browserstackConfig = {
   test_settings: {
     default: {
       desiredCapabilities: {
-        'browserstack.user': 'brunagonalves3',
-        'browserstack.key': 'n5c6Ay3MqPpNPpxj567q',
+        'browserstack.user': process.env.BROWSERSTACK_USR,
+        'browserstack.key': process.env.BROWSERSTACK_PSW,
         'browserstack.local': true
       },
       globals: defaultConfig.test_settings.default.globals
