@@ -56,7 +56,11 @@ class DenuncianteForm extends Component {
           />
         </div>
 
-        <Endereco estadoState="estadoDenunciante" estadoInicial={estadoDenunciante} cidadeState="cidadeDenunciante" />
+        <Endereco
+          estadoState="estadoDenunciante"
+          estadoInicial={estadoDenunciante}
+          cidadeState="cidadeDenunciante"
+        />
 
         <div className="row">
           <Telefone

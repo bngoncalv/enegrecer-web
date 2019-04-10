@@ -25,7 +25,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13971000000
+              "duration": 7237000000
             }
           },
           {
@@ -38,7 +38,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 32353000000
+              "duration": 6691000000
             }
           },
           {
@@ -51,7 +51,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1750000000
+              "duration": 128000000
             }
           },
           {
@@ -64,7 +64,66 @@
             },
             "result": {
               "status": "passed",
-              "duration": 396000000
+              "duration": 8000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Funcionalidade",
+    "name": "Login",
+    "line": 2,
+    "id": "login",
+    "tags": [],
+    "uri": "src/tests/features/login.feature",
+    "elements": [
+      {
+        "id": "login;realizar-login",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Realizar login",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 4,
+            "name": "que O usuário moderador acessa a página de login",
+            "match": {
+              "location": "src/tests/step_definitions/login.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 415000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 5,
+            "name": "O usuário preenche os campos para de email e senha e clica em entrar",
+            "match": {
+              "location": "src/tests/step_definitions/login.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 472000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 6,
+            "name": "O usuário é redirecionado para página \"painel\"",
+            "match": {
+              "location": "src/tests/step_definitions/login.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
             }
           }
         ]
