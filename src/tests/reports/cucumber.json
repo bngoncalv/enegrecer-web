@@ -25,7 +25,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7237000000
+              "duration": 7101000000
             }
           },
           {
@@ -38,7 +38,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6691000000
+              "duration": 7346000000
             }
           },
           {
@@ -64,7 +64,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 12000000
             }
           }
         ]
@@ -97,7 +97,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 415000000
+              "duration": 355000000
             }
           },
           {
@@ -110,20 +110,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 472000000
+              "duration": 489000000
             }
           },
           {
             "arguments": [],
             "keyword": "Entao ",
             "line": 6,
-            "name": "O usuário é redirecionado para página \"painel\"",
+            "name": "O usuário é redirecionado para página painel",
             "match": {
               "location": "src/tests/step_definitions/login.js:29"
             },
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 1620000000
             }
           }
         ]

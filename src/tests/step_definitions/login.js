@@ -1,12 +1,12 @@
 const { client } = require('nightwatch-cucumber');
 const { Given, Then, When } = require('cucumber');
 const faker = require('faker');
+const { TIMEOUT } = require('../utils/syntaxSugar');
 
 faker.locale = 'pt_BR';
 const { setDefaultTimeout } = require('cucumber');
 const loginPage = client.page.login_page();
-
-console.log(setDefaultTimeout, loginPage);
+const moderadorPage = client.page.moderador_page();
 
 setDefaultTimeout(20 * 1000);
 
@@ -26,6 +26,7 @@ When('O usuário preenche os campos para de email e senha e clica em entrar', ()
     .loginClick()
 });
 
-Then('O usuário é redirecionado para página {string}', (string) => {
-  return loginPage.assert.urlContains('/login');  
+Then('O usuário é redirecionado para página painel', () => {
+  moderadorPage.waitForElementVisible('@painelModerador', TIMEOUT);
+  return loginPage.assert.urlContains('/moderador/painel');  
 });
