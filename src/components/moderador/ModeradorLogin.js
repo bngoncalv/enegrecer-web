@@ -83,16 +83,37 @@ export default class ModeradorLogin extends Component {
 
     return (
       <div className="row login_moderador">
-        <form className="col s4 formulario_login_moderador" onSubmit={this.onSubmit}>
+        <form id="login-form" className="col s4 login_moderador-form" onSubmit={this.onSubmit}>
           <div className="input-field col s12">
-            <input id="login_moderador" name="loginModerador" type="text" className="validate" value={email} onChange={event => this.setState(updateByPropertyName('email', event.target.value))} />
+            <input
+              id="login_moderador"
+              name="loginModerador"
+              type="text"
+              className="validate"
+              value={email}
+              onChange={event => this.setState(updateByPropertyName('email', event.target.value))}
+            />
             <label htmlFor="login_moderador">Login Moderador</label>
           </div>
           <div className="input-field col s12">
-            <input id="senha_moderador" name="senhaModerador" type="password" className="validate" value={senha} onChange={event => this.setState(updateByPropertyName('senha', event.target.value))} />
+            <input
+              id="senha_moderador"
+              name="senhaModerador"
+              type="password"
+              className="validate"
+              value={senha}
+              onChange={event => this.setState(updateByPropertyName('senha', event.target.value))}
+            />
             <label htmlFor="senha_moderador">Senha Moderador</label>
           </div>
-          <button id="confirm-button" className="waves-effect waves-light btn" data-target="modal_erro" disabled={isInvalid} type="submit" name="action" >
+          <button
+            id="confirm-button"
+            className="waves-effect waves-light btn"
+            data-target="modal_erro"
+            disabled={isInvalid}
+            type="submit"
+            name="action"
+          >
               Entrar
           </button>
 

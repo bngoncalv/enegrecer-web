@@ -25,7 +25,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7101000000
+              "duration": 12399000000
             }
           },
           {
@@ -38,7 +38,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7346000000
+              "duration": 6451000000
             }
           },
           {
@@ -51,7 +51,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 128000000
+              "duration": 163000000
             }
           },
           {
@@ -64,7 +64,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 11000000
             }
           }
         ]
@@ -93,11 +93,11 @@
             "line": 4,
             "name": "que O usuário moderador acessa a página de login",
             "match": {
-              "location": "src/tests/step_definitions/login.js:13"
+              "location": "src/tests/step_definitions/login.js:11"
             },
             "result": {
               "status": "passed",
-              "duration": 355000000
+              "duration": 565000000
             }
           },
           {
@@ -106,11 +106,11 @@
             "line": 5,
             "name": "O usuário preenche os campos para de email e senha e clica em entrar",
             "match": {
-              "location": "src/tests/step_definitions/login.js:19"
+              "location": "src/tests/step_definitions/login.js:17"
             },
             "result": {
               "status": "passed",
-              "duration": 489000000
+              "duration": 584000000
             }
           },
           {
@@ -119,11 +119,119 @@
             "line": 6,
             "name": "O usuário é redirecionado para página painel",
             "match": {
-              "location": "src/tests/step_definitions/login.js:29"
+              "location": "src/tests/step_definitions/login.js:27"
             },
             "result": {
               "status": "passed",
-              "duration": 1620000000
+              "duration": 1738000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Funcionalidade",
+    "name": "Gestao moderador",
+    "line": 2,
+    "id": "gestao-moderador",
+    "tags": [],
+    "uri": "src/tests/features/moderador.feature",
+    "elements": [
+      {
+        "id": "gestao-moderador;visualizar-denuncias",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Visualizar denuncias",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 4,
+            "name": "que O usuário moderador está na página painel moderador",
+            "match": {
+              "location": "src/tests/step_definitions/moderador.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 5,
+            "name": "O usuário clica no botão expandir retrair",
+            "match": {
+              "location": "src/tests/step_definitions/moderador.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2786000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 6,
+            "name": "O usuário visualiza os detalhes da denuncia",
+            "match": {
+              "location": "src/tests/step_definitions/moderador.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "gestao-moderador;realizar-logout",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Realizar logout",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que O usuário moderador está na página painel moderador",
+            "match": {
+              "location": "src/tests/step_definitions/moderador.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 10,
+            "name": "O usuário clica no botão de sair",
+            "match": {
+              "location": "src/tests/step_definitions/moderador.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 267000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 11,
+            "name": "O usuário é redirecionado para página de login",
+            "match": {
+              "location": "src/tests/step_definitions/moderador.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56000000
             }
           }
         ]

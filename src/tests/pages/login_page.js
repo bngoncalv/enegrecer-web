@@ -3,6 +3,7 @@ const { URL, TIMEOUT } = require('../utils/syntaxSugar');
 module.exports = {
   url: `${URL}login/`,
   elements: {
+    loginForm: 'form[id=login-form]',
     loginModerador: 'input[name=loginModerador]',
     senhaModerador: 'input[name=senhaModerador]',
     loginButton: 'button',

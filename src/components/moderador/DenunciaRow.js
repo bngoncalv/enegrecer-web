@@ -42,6 +42,7 @@ class DenunciaRow extends Component {
           <td>
             <input
               type="button"
+              name="toggleBtn"
               className={`botao-expandir-retrair ${expanded ? 'botao-retrair' : 'botao-expandir'}`}
               onClick={this.mudaEstado}
             />

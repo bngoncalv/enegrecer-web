@@ -1,9 +1,7 @@
 const { client } = require('nightwatch-cucumber');
 const { Given, Then, When } = require('cucumber');
-const faker = require('faker');
 const { TIMEOUT } = require('../utils/syntaxSugar');
 
-faker.locale = 'pt_BR';
 const { setDefaultTimeout } = require('cucumber');
 const loginPage = client.page.login_page();
 const moderadorPage = client.page.moderador_page();
