@@ -24,103 +24,103 @@ module.exports = {
   },
   commands: [
     {
-      preencherCampoNomeDenunciante (string) {
+      preencherCampoNomeDenunciante(string) {
         this
           .waitForElementVisible('@nomeDenunciante', TIMEOUT)
           .setValue('@nomeDenunciante', string);
         return this;
       },
-      preencherCampoDataNascimentoDenunciante (string) {
+      preencherCampoDataNascimentoDenunciante(string) {
         this
           .waitForElementVisible('@dataNascimentoDenunciante', TIMEOUT)
           .setValue('@dataNascimentoDenunciante', string);
         return this;
       },
-      selecionarEstadoDenunciante (string) {
+      selecionarEstadoDenunciante(string) {
         this
           .waitForElementVisible('@estadoDenunciante', TIMEOUT)
           .setValue('@estadoDenunciante', string);
         return this;
       },
-      selecionarCidadeDenunciante (string) {
+      selecionarCidadeDenunciante(string) {
         this
           .waitForElementVisible('@cidadeDenunciante', TIMEOUT)
           .setValue('@cidadeDenunciante', string);
         return this;
       },
-      preencherCampoTelefoneDenunciante (string) {
+      preencherCampoTelefoneDenunciante(string) {
         this
           .waitForElementVisible('@telefoneDenunciante', TIMEOUT)
           .setValue('@telefoneDenunciante', string);
         return this;
       },
-      preencherCampoEmailDenunciante (string) {
+      preencherCampoEmailDenunciante(string) {
         this
           .waitForElementVisible('@emailDenunciante', TIMEOUT)
           .setValue('@emailDenunciante', string);
         return this;
       },
-      preencherCampoRacaDenunciante (string) {
+      preencherCampoRacaDenunciante(string) {
         this
           .waitForElementVisible('@racaDenunciante', TIMEOUT)
           .setValue('@racaDenunciante', string);
         return this;
       },
-      preencherCampoGeneroDenunciante (string) {
+      preencherCampoGeneroDenunciante(string) {
         this
           .waitForElementVisible('@generoDenunciante', TIMEOUT)
           .setValue('@generoDenunciante', string);
         return this;
       },
-      preencherCampoNomeVitima (string) {
+      preencherCampoNomeVitima(string) {
         this
           .waitForElementVisible('@nomeVitima', TIMEOUT)
           .setValue('@nomeVitima', string);
         return this;
       },
-      preencherCampoDataNascimentoVitima (string) {
+      preencherCampoDataNascimentoVitima(string) {
         this
           .waitForElementVisible('@dataNascimentoVitima', TIMEOUT)
           .setValue('@dataNascimentoVitima', string);
         return this;
       },
-      selecionarEstadoVitima (string) {
+      selecionarEstadoVitima(string) {
         this
           .waitForElementVisible('@estadoVitima', TIMEOUT)
           .setValue('@estadoVitima', string);
         return this;
       },
-      selecionarCidadeVitima (string) {
+      selecionarCidadeVitima(string) {
         this
           .waitForElementVisible('@cidadeVitima', TIMEOUT)
           .setValue('@cidadeVitima', string);
         return this;
       },
-      preencherCampoTelefoneVitima (string) {
+      preencherCampoTelefoneVitima(string) {
         this
           .waitForElementVisible('@telefoneVitima', TIMEOUT)
           .setValue('@telefoneVitima', string);
         return this;
       },
-      preencherCampoRacaVitima (string) {
+      preencherCampoRacaVitima(string) {
         this
           .waitForElementVisible('@racaVitima', TIMEOUT)
           .setValue('@racaVitima', string);
         return this;
       },
-      preencherCampoGeneroVitima (string) {
+      preencherCampoGeneroVitima(string) {
         this
           .waitForElementVisible('@generoVitima', TIMEOUT)
           .setValue('@generoVitima', string);
         return this;
       },
-      preencherCampoDescricaoAgressor (string) {
+      preencherCampoDescricaoAgressor(string) {
         this
           .waitForElementVisible('@descricaoAgressor', TIMEOUT)
           .setValue('@descricaoAgressor', string);
         return this;
       },
-      salvarDenuncia () {
+      salvarDenuncia() {
         this
           .waitForElementVisible('@enviarDenuncia', TIMEOUT)
           .click('@enviarDenuncia');
