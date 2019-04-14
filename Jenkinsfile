@@ -20,8 +20,15 @@ pipeline {
       }
     }
     stage('Functional Test') {
+      agent {
+        dockerfile {
+          filename 'Dockerfile'
+          args '-v ${PWD}/.cache/yarn:/.cache/yarn -v ${PWD}/.yarn:/.yarn'
+        }
+      }
       steps {
         sh 'chmod +x tests/browserstack.sh'
+        sh 'yarn'
         sh 'yarn test:functional:ci'
       }
     }
