@@ -27,8 +27,9 @@ pipeline {
         }
       }
       steps {
-        sh 'chmod +x tests/browserstack.sh'
+        sh 'su -l root'
         sh 'yarn'
+        sh 'chmod +x tests/browserstack.sh'
         sh 'yarn test:functional:ci'
       }
     }
