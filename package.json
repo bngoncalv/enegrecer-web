@@ -37,7 +37,7 @@
     "test:functional": "start-test start 3000 test:functional:local",
     "test:functional:local": "yarn clean && nightwatch -c tests/conf/nightwatch.conf.js -e firefox",
     "test:functional:ci": "start-test start 3000 test:functional:ci:start",
-    "test:functional:ci:start": "sh tests/browserstack.sh",
+    "test:functional:ci:start": ". tests/browserstack.sh",
     "test:functional:browserstack": "node tests/local.runner.js -c tests/conf/browserstack.conf.js",
     "eject": "react-scripts eject",
     "lint": "./node_modules/.bin/eslint src --fix",
