@@ -3,10 +3,7 @@ const { Given, Then, When } = require('cucumber');
 const faker = require('faker');
 
 faker.locale = 'pt_BR';
-const { setDefaultTimeout } = require('cucumber');
 const denunciaPage = client.page.denuncia_page();
-
-setDefaultTimeout(20 * 1000);
 
 Given('O usuário acessa a página de cadastrar denúncia', () => {
   return denunciaPage

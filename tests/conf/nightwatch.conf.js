@@ -4,15 +4,15 @@ const geckodriver = require('geckodriver');
 
 require('nightwatch-cucumber')({
   cucumberArgs: [
-    '--require', 'src/tests/step_definitions',
+    '--require', 'tests/step_definitions',
     '--format', 'node_modules/cucumber-pretty',
-    '--format', 'json:src/tests/reports/cucumber.json',
-    'src/tests/features']
+    '--format', 'json:tests/reports/cucumber.json',
+    'tests/features']
 });
 
 module.exports = {
-  output_folder: 'src/tests/reports',
-  page_objects_path: 'src/tests/pages',
+  output_folder: 'tests/reports',
+  page_objects_path: 'tests/pages',
   custom_assertions_path: '',
   live_output: false,
   disable_colors: false,

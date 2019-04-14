@@ -11,14 +11,14 @@ module.exports = {
     {
       logoutClick() {
         return this
-        .waitForElementVisible('@logoutButton', TIMEOUT)
-        .click('@logoutButton');
+          .waitForElementVisible('@logoutButton', TIMEOUT)
+          .click('@logoutButton');
       },
-      expandirRetrairClick(){
+      expandirRetrairClick() {
         return this
-        .waitForElementVisible('@botaoExpandiRetrair', TIMEOUT)
-        .click('@botaoExpandiRetrair');
-      } 
+          .waitForElementVisible('@botaoExpandiRetrair', TIMEOUT)
+          .click('@botaoExpandiRetrair');
+      }
     }
-  ] 
+  ]
 };

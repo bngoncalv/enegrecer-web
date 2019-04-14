@@ -1,0 +1,241 @@
+[
+  {
+    "keyword": "Funcionalidade",
+    "name": "Denúncia",
+    "line": 2,
+    "id": "denúncia",
+    "tags": [],
+    "uri": "tests/features/denuncia.feature",
+    "elements": [
+      {
+        "id": "denúncia;realizar-o-cadastro-de-uma-denúncia",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Realizar o cadastro de uma denúncia",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 4,
+            "name": "O usuário acessa a página de cadastrar denúncia",
+            "match": {
+              "location": "tests/step_definitions/denuncia.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9358000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 5,
+            "name": "O usuário preenche os campos para o cadastro da denúncia",
+            "match": {
+              "location": "tests/step_definitions/denuncia.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5574000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 6,
+            "name": "O usuário confirma o cadastro da denúncia",
+            "match": {
+              "location": "tests/step_definitions/denuncia.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 132000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 7,
+            "name": "A denúncia é salva com sucesso e o usuário é redirecionado para página \"depois-denuncia\"",
+            "match": {
+              "location": "tests/step_definitions/denuncia.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Funcionalidade",
+    "name": "Login",
+    "line": 2,
+    "id": "login",
+    "tags": [],
+    "uri": "tests/features/login.feature",
+    "elements": [
+      {
+        "id": "login;realizar-login",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Realizar login",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 4,
+            "name": "que o usuário moderador acessa a página de login",
+            "match": {
+              "location": "tests/step_definitions/login.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 382000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 5,
+            "name": "o usuário faz login no sistema",
+            "match": {
+              "location": "tests/step_definitions/login.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 510000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 6,
+            "name": "o usuário é redirecionado para página painel",
+            "match": {
+              "location": "tests/step_definitions/login.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1735000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Funcionalidade",
+    "name": "Gestao moderador",
+    "line": 2,
+    "id": "gestao-moderador",
+    "tags": [],
+    "uri": "tests/features/moderador.feature",
+    "elements": [
+      {
+        "id": "gestao-moderador;visualizar-denuncias",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Visualizar denuncias",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 4,
+            "name": "que o usuário moderador está na página painel moderador",
+            "match": {
+              "location": "tests/step_definitions/moderador.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 5,
+            "name": "o usuário clica no botão expandir retrair",
+            "match": {
+              "location": "tests/step_definitions/moderador.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1719000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 6,
+            "name": "o usuário visualiza os detalhes da denuncia",
+            "match": {
+              "location": "tests/step_definitions/moderador.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "gestao-moderador;realizar-logout",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Realizar logout",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 9,
+            "name": "que o usuário moderador está na página painel moderador",
+            "match": {
+              "location": "tests/step_definitions/moderador.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 10,
+            "name": "o usuário clica no botão de sair",
+            "match": {
+              "location": "tests/step_definitions/moderador.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 259000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entao ",
+            "line": 11,
+            "name": "o usuário é redirecionado para página de login",
+            "match": {
+              "location": "tests/step_definitions/moderador.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

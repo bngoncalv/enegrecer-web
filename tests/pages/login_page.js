@@ -10,13 +10,13 @@ module.exports = {
   },
   commands: [
     {
-      preencherCampoLoginModerador (string) {
+      preencherCampoLoginModerador(string) {
         this
           .waitForElementVisible('@loginModerador', TIMEOUT)
           .setValue('@loginModerador', string);
         return this;
       },
-      preencherCampoSenhaModerador (string) {
+      preencherCampoSenhaModerador(string) {
         this
           .waitForElementVisible('@senhaModerador', TIMEOUT)
           .setValue('@senhaModerador', string);
