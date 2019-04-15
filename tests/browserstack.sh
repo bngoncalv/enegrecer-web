@@ -3,7 +3,7 @@
 EXIT_CODE=0
 
 runTests() {
-  browsers=( "firefox" "chrome")
+  browsers=( "chrome" "firefox" )
 
   for browser in "${browsers[@]}"
   do
@@ -20,5 +20,4 @@ runTests() {
 
 runTests
 
-kill -9 $(lsof -i:45691 -t)
 exit "${EXIT_CODE}"
