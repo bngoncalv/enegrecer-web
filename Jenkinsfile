@@ -6,6 +6,7 @@ pipeline {
   stages {
     stage('Install') {
       steps {
+        sh 'echo whoami'
         sh 'yarn install'
       }
     }
@@ -27,7 +28,6 @@ pipeline {
         }
       }
       steps {
-        sh 'su -l root'
         sh 'yarn'
         sh 'chmod +x tests/browserstack.sh'
         sh 'yarn test:functional:ci'
