@@ -3,7 +3,7 @@
 EXIT_CODE=0
 
 runTests() {
-  browsers=( "chrome" "firefox" )
+  browsers=( "chrome" )
 
   for browser in "${browsers[@]}"
   do
