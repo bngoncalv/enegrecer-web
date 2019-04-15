@@ -6,7 +6,6 @@ pipeline {
   stages {
     stage('Install') {
       steps {
-        sh 'echo whoami'
         sh 'yarn install'
       }
     }
