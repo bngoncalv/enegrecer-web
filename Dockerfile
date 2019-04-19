@@ -1,1 +1,1 @@
-FROM zenika/alpine-chrome:with-node
+FROM abrunanicole/alpine_node_glibc

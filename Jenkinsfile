@@ -29,7 +29,7 @@ pipeline {
       steps {
         sh 'yarn'
         sh 'chmod +x tests/browserstack.sh'
-        sh 'yarn test:functional'
+        sh 'yarn test:functional:ci'
       }
     }
   }
