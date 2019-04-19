@@ -24,11 +24,10 @@ pipeline {
         dockerfile {
           filename 'Dockerfile'
           args '-v ${PWD}/.cache/yarn:/.cache/yarn -v ${PWD}/.yarn:/.yarn'
+          reuseNode true
         }
       }
       steps {
-        sh 'yarn'
-        sh 'chmod +x tests/browserstack.sh'
         sh 'yarn test:functional:ci'
       }
     }
