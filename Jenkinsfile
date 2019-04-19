@@ -26,8 +26,6 @@ pipeline {
     }
     stage('Functional Test') {
       steps {
-        sh 'yarn'
-        sh 'chmod +x tests/browserstack.sh'
         sh 'yarn test:functional:ci'
       }
     }
