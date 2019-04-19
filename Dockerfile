@@ -1,4 +1,4 @@
-FROM node:10.14-alpine
+FROM blazarecki/browserstack
 
 RUN apk update \
   && apk add bash \
