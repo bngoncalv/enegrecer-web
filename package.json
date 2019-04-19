@@ -35,7 +35,7 @@
     "test-local": "../node_modules/.bin/react-scripts test --env=jsdom",
     "test-coverage": "react-scripts test --env=jsdom --coverage && ./node_modules/codeclimate-test-reporter/bin/codeclimate.js < ./coverage/lcov.info",
     "test:functional": "start-test start 3000 test:functional:local",
-    "test:functional:local": "yarn clean && nightwatch -c tests/conf/nightwatch.conf.js -e firefox",
+    "test:functional:local": "yarn clean && nightwatch -c tests/conf/nightwatch.conf.js -e chrome",
     "test:functional:ci": "start-test start 3000 test:functional:ci:start",
     "test:functional:ci:start": "./tests/browserstack.sh",
     "test:functional:browserstack": "node tests/local.runner.js -c tests/conf/browserstack.conf.js",
