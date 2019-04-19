@@ -28,6 +28,7 @@ pipeline {
         }
       }
       steps {
+        sh 'npm rebuild node-sass'
         sh 'yarn test:functional:ci'
       }
     }
