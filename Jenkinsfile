@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-        dockerfile {
-          filename 'Dockerfile'
-          args '-v ${PWD}/.cache/yarn:/.cache/yarn -v ${PWD}/.yarn:/.yarn'
-        }
-  }
+  agent any
   environment {
     BROWSERSTACK = credentials('browserstack-credentials')
   }
@@ -25,7 +20,15 @@ pipeline {
       }
     }
     stage('Functional Test') {
+      agent {
+        dockerfile {
+          filename 'Dockerfile'
+          args '-v ${PWD}/.cache/yarn:/.cache/yarn -v ${PWD}/.yarn:/.yarn'
+        }
+      }
       steps {
+        sh 'yarn'
+        sh 'chmod +x tests/browserstack.sh'
         sh 'yarn test:functional:ci'
       }
     }
